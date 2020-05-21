@@ -1,0 +1,85 @@
+{
+  "paragraphs": [
+    {
+      "text": "select title from default.sandeep_netflix limit 10",
+      "user": "sshah@qubole.com",
+      "dateUpdated": "May 14, 2020 5:21:50 AM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": true,
+          "keys": [
+            {
+              "name": "title",
+              "index": 0.0,
+              "aggr": "sum"
+            }
+          ],
+          "values": [],
+          "groups": [],
+          "scatter": {
+            "xAxis": {
+              "name": "title",
+              "index": 0.0,
+              "aggr": "sum"
+            },
+            "yAxis": {
+              "name": "release_year",
+              "index": 1.0,
+              "aggr": "sum"
+            }
+          }
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "version": "v0",
+      "jobName": "paragraph_1589433349802_1767028751",
+      "id": "20200514-051549_29589133_q_2ZVFWS5SDJ1589433238",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TABLE",
+        "msg": "title\nNorm of the North: King Sized Adventure\t\nJandino: Whatever it Takes\t\nTransformers Prime\t\nTransformers: Robots in Disguise\t\n#realityhigh\t\nApaches\t\nAutomata\t\nFabrizio Copano: Solo pienso en mi\t\nFire Chasers\t\nGood People\t\n"
+      },
+      "dateCreated": "May 14, 2020 5:13:58 AM",
+      "dateSubmitted": "May 14, 2020 5:21:50 AM",
+      "dateStarted": "May 14, 2020 5:21:50 AM",
+      "dateFinished": "May 14, 2020 5:21:50 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 1000
+    },
+    {
+      "text": "",
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "version": "v0",
+      "jobName": "paragraph_1589433691505_1441625295",
+      "id": "20200514-052131_1833302091_q_2ZVFWS5SDJ1589433238",
+      "dateCreated": "May 14, 2020 5:21:31 AM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 1000
+    }
+  ],
+  "name": "Demo",
+  "id": "2ZVFWS5SDJ1589433238",
+  "angularObjects": {
+    "2F9TQVWW618351588118853233:shared_process": [],
+    "2F8AEJCAJ18351588118853236:shared_process": [],
+    "2F9UCGXKZ18351588118853236:shared_process": []
+  },
+  "config": {
+    "isDashboard": false,
+    "defaultLang": ""
+  },
+  "info": {},
+  "source": "FCN"
+}
