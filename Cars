@@ -1,9 +1,9 @@
 {
   "paragraphs": [
     {
-      "text": "Select * from default.usa_cars limit 1000",
+      "text": "Select * from default.usa_cars limit 10000",
       "user": "cvacalebre@qubole.com",
-      "dateUpdated": "May 19, 2020 4:20:41 PM",
+      "dateUpdated": "May 22, 2020 5:24:17 PM",
       "config": {
         "colWidth": 12.0,
         "graph": {
