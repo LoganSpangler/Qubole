@@ -1,0 +1,91 @@
+{
+  "paragraphs": [
+    {
+      "text": "\r\nSELECT * FROM default.eshwar_us_counties5 \r\nLIMIT 200",
+      "user": "edandapani@qubole.com",
+      "dateUpdated": "May 21, 2020 11:46:56 PM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": true,
+          "keys": [
+            {
+              "name": "state",
+              "index": 2.0,
+              "aggr": "sum"
+            }
+          ],
+          "values": [
+            {
+              "name": "cases",
+              "index": 4.0,
+              "aggr": "sum"
+            }
+          ],
+          "groups": [],
+          "scatter": {
+            "xAxis": {
+              "name": "date",
+              "index": 0.0,
+              "aggr": "sum"
+            },
+            "yAxis": {
+              "name": "county",
+              "index": 1.0,
+              "aggr": "sum"
+            }
+          }
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "version": "v0",
+      "jobName": "paragraph_1590104333597_-478745703",
+      "id": "20200521-233853_1363531760_q_TUG8SQ8G6E1590104213",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TABLE",
+        "msg": "date\tcounty\tstate\tfips\tcases\tdeaths\n1/21/2020\tSnohomish\tWashington\t53061\t1\t0\t\n1/22/2020\tSnohomish\tWashington\t53061\t1\t0\t\n1/23/2020\tSnohomish\tWashington\t53061\t1\t0\t\n1/24/2020\tCook\tIllinois\t17031\t1\t0\t\n1/24/2020\tSnohomish\tWashington\t53061\t1\t0\t\n1/25/2020\tOrange\tCalifornia\t6059\t1\t0\t\n1/25/2020\tCook\tIllinois\t17031\t1\t0\t\n1/25/2020\tSnohomish\tWashington\t53061\t1\t0\t\n1/26/2020\tMaricopa\tArizona\t4013\t1\t0\t\n1/26/2020\tLos Angeles\tCalifornia\t6037\t1\t0\t\n1/26/2020\tOrange\tCalifornia\t6059\t1\t0\t\n1/26/2020\tCook\tIllinois\t17031\t1\t0\t\n1/26/2020\tSnohomish\tWashington\t53061\t1\t0\t\n1/27/2020\tMaricopa\tArizona\t4013\t1\t0\t\n1/27/2020\tLos Angeles\tCalifornia\t6037\t1\t0\t\n1/27/2020\tOrange\tCalifornia\t6059\t1\t0\t\n1/27/2020\tCook\tIllinois\t17031\t1\t0\t\n1/27/2020\tSnohomish\tWashington\t53061\t1\t0\t\n1/28/2020\tMaricopa\tArizona\t4013\t1\t0\t\n1/28/2020\tLos Angeles\tCalifornia\t6037\t1\t0\t\n1/28/2020\tOrange\tCalifornia\t6059\t1\t0\t\n1/28/2020\tCook\tIllinois\t17031\t1\t0\t\n1/28/2020\tSnohomish\tWashington\t53061\t1\t0\t\n1/29/2020\tMaricopa\tArizona\t4013\t1\t0\t\n1/29/2020\tLos Angeles\tCalifornia\t6037\t1\t0\t\n1/29/2020\tOrange\tCalifornia\t6059\t1\t0\t\n1/29/2020\tCook\tIllinois\t17031\t1\t0\t\n1/29/2020\tSnohomish\tWashington\t53061\t1\t0\t\n1/30/2020\tMaricopa\tArizona\t4013\t1\t0\t\n1/30/2020\tLos Angeles\tCalifornia\t6037\t1\t0\t\n1/30/2020\tOrange\tCalifornia\t6059\t1\t0\t\n1/30/2020\tCook\tIllinois\t17031\t2\t0\t\n1/30/2020\tSnohomish\tWashington\t53061\t1\t0\t\n1/31/2020\tMaricopa\tArizona\t4013\t1\t0\t\n1/31/2020\tLos Angeles\tCalifornia\t6037\t1\t0\t\n1/31/2020\tOrange\tCalifornia\t6059\t1\t0\t\n1/31/2020\tSanta Clara\tCalifornia\t6085\t1\t0\t\n1/31/2020\tCook\tIllinois\t17031\t2\t0\t\n1/31/2020\tSnohomish\tWashington\t53061\t1\t0\t\n2/1/2020\tMaricopa\tArizona\t4013\t1\t0\t\n2/1/2020\tLos Angeles\tCalifornia\t6037\t1\t0\t\n2/1/2020\tOrange\tCalifornia\t6059\t1\t0\t\n2/1/2020\tSanta Clara\tCalifornia\t6085\t1\t0\t\n2/1/2020\tCook\tIllinois\t17031\t2\t0\t\n2/1/2020\tSuffolk\tMassachusetts\t25025\t1\t0\t\n2/1/2020\tSnohomish\tWashington\t53061\t1\t0\t\n2/2/2020\tMaricopa\tArizona\t4013\t1\t0\t\n2/2/2020\tLos Angeles\tCalifornia\t6037\t1\t0\t\n2/2/2020\tOrange\tCalifornia\t6059\t1\t0\t\n2/2/2020\tSan Francisco\tCalifornia\t6075\t2\t0\t\n2/2/2020\tSanta Clara\tCalifornia\t6085\t2\t0\t\n2/2/2020\tCook\tIllinois\t17031\t2\t0\t\n2/2/2020\tSuffolk\tMassachusetts\t25025\t1\t0\t\n2/2/2020\tSnohomish\tWashington\t53061\t1\t0\t\n2/3/2020\tMaricopa\tArizona\t4013\t1\t0\t\n2/3/2020\tLos Angeles\tCalifornia\t6037\t1\t0\t\n2/3/2020\tOrange\tCalifornia\t6059\t1\t0\t\n2/3/2020\tSan Francisco\tCalifornia\t6075\t2\t0\t\n2/3/2020\tSanta Clara\tCalifornia\t6085\t2\t0\t\n2/3/2020\tCook\tIllinois\t17031\t2\t0\t\n2/3/2020\tSuffolk\tMassachusetts\t25025\t1\t0\t\n2/3/2020\tSnohomish\tWashington\t53061\t1\t0\t\n2/4/2020\tMaricopa\tArizona\t4013\t1\t0\t\n2/4/2020\tLos Angeles\tCalifornia\t6037\t1\t0\t\n2/4/2020\tOrange\tCalifornia\t6059\t1\t0\t\n2/4/2020\tSan Francisco\tCalifornia\t6075\t2\t0\t\n2/4/2020\tSanta Clara\tCalifornia\t6085\t2\t0\t\n2/4/2020\tCook\tIllinois\t17031\t2\t0\t\n2/4/2020\tSuffolk\tMassachusetts\t25025\t1\t0\t\n2/4/2020\tSnohomish\tWashington\t53061\t1\t0\t\n2/5/2020\tMaricopa\tArizona\t4013\t1\t0\t\n2/5/2020\tLos Angeles\tCalifornia\t6037\t1\t0\t\n2/5/2020\tOrange\tCalifornia\t6059\t1\t0\t\n2/5/2020\tSan Francisco\tCalifornia\t6075\t2\t0\t\n2/5/2020\tSanta Clara\tCalifornia\t6085\t2\t0\t\n2/5/2020\tCook\tIllinois\t17031\t2\t0\t\n2/5/2020\tSuffolk\tMassachusetts\t25025\t1\t0\t\n2/5/2020\tSnohomish\tWashington\t53061\t1\t0\t\n2/5/2020\tDane\tWisconsin\t55025\t1\t0\t\n2/6/2020\tMaricopa\tArizona\t4013\t1\t0\t\n2/6/2020\tLos Angeles\tCalifornia\t6037\t1\t0\t\n2/6/2020\tOrange\tCalifornia\t6059\t1\t0\t\n2/6/2020\tSan Francisco\tCalifornia\t6075\t2\t0\t\n2/6/2020\tSanta Clara\tCalifornia\t6085\t2\t0\t\n2/6/2020\tCook\tIllinois\t17031\t2\t0\t\n2/6/2020\tSuffolk\tMassachusetts\t25025\t1\t0\t\n2/6/2020\tSnohomish\tWashington\t53061\t1\t0\t\n2/6/2020\tDane\tWisconsin\t55025\t1\t0\t\n2/7/2020\tMaricopa\tArizona\t4013\t1\t0\t\n2/7/2020\tLos Angeles\tCalifornia\t6037\t1\t0\t\n2/7/2020\tOrange\tCalifornia\t6059\t1\t0\t\n2/7/2020\tSan Francisco\tCalifornia\t6075\t2\t0\t\n2/7/2020\tSanta Clara\tCalifornia\t6085\t2\t0\t\n2/7/2020\tCook\tIllinois\t17031\t2\t0\t\n2/7/2020\tSuffolk\tMassachusetts\t25025\t1\t0\t\n2/7/2020\tSnohomish\tWashington\t53061\t1\t0\t\n2/7/2020\tDane\tWisconsin\t55025\t1\t0\t\n2/8/2020\tMaricopa\tArizona\t4013\t1\t0\t\n2/8/2020\tLos Angeles\tCalifornia\t6037\t1\t0\t\n2/8/2020\tOrange\tCalifornia\t6059\t1\t0\t\n2/8/2020\tSan Francisco\tCalifornia\t6075\t2\t0\t\n2/8/2020\tSanta Clara\tCalifornia\t6085\t2\t0\t\n2/8/2020\tCook\tIllinois\t17031\t2\t0\t\n2/8/2020\tSuffolk\tMassachusetts\t25025\t1\t0\t\n2/8/2020\tSnohomish\tWashington\t53061\t1\t0\t\n2/8/2020\tDane\tWisconsin\t55025\t1\t0\t\n2/9/2020\tMaricopa\tArizona\t4013\t1\t0\t\n2/9/2020\tLos Angeles\tCalifornia\t6037\t1\t0\t\n2/9/2020\tOrange\tCalifornia\t6059\t1\t0\t\n2/9/2020\tSan Francisco\tCalifornia\t6075\t2\t0\t\n2/9/2020\tSanta Clara\tCalifornia\t6085\t2\t0\t\n2/9/2020\tCook\tIllinois\t17031\t2\t0\t\n2/9/2020\tSuffolk\tMassachusetts\t25025\t1\t0\t\n2/9/2020\tSnohomish\tWashington\t53061\t1\t0\t\n2/9/2020\tDane\tWisconsin\t55025\t1\t0\t\n2/10/2020\tMaricopa\tArizona\t4013\t1\t0\t\n2/10/2020\tLos Angeles\tCalifornia\t6037\t1\t0\t\n2/10/2020\tOrange\tCalifornia\t6059\t1\t0\t\n2/10/2020\tSan Diego\tCalifornia\t6073\t1\t0\t\n2/10/2020\tSan Francisco\tCalifornia\t6075\t2\t0\t\n2/10/2020\tSanta Clara\tCalifornia\t6085\t2\t0\t\n2/10/2020\tCook\tIllinois\t17031\t2\t0\t\n2/10/2020\tSuffolk\tMassachusetts\t25025\t1\t0\t\n2/10/2020\tSnohomish\tWashington\t53061\t1\t0\t\n2/10/2020\tDane\tWisconsin\t55025\t1\t0\t\n2/11/2020\tMaricopa\tArizona\t4013\t1\t0\t\n2/11/2020\tLos Angeles\tCalifornia\t6037\t1\t0\t\n2/11/2020\tOrange\tCalifornia\t6059\t1\t0\t\n2/11/2020\tSan Diego\tCalifornia\t6073\t1\t0\t\n2/11/2020\tSan Francisco\tCalifornia\t6075\t2\t0\t\n2/11/2020\tSanta Clara\tCalifornia\t6085\t2\t0\t\n2/11/2020\tCook\tIllinois\t17031\t2\t0\t\n2/11/2020\tSuffolk\tMassachusetts\t25025\t1\t0\t\n2/11/2020\tSnohomish\tWashington\t53061\t1\t0\t\n2/11/2020\tDane\tWisconsin\t55025\t1\t0\t\n2/12/2020\tMaricopa\tArizona\t4013\t1\t0\t\n2/12/2020\tLos Angeles\tCalifornia\t6037\t1\t0\t\n2/12/2020\tOrange\tCalifornia\t6059\t1\t0\t\n2/12/2020\tSan Diego\tCalifornia\t6073\t1\t0\t\n2/12/2020\tSan Francisco\tCalifornia\t6075\t2\t0\t\n2/12/2020\tSanta Clara\tCalifornia\t6085\t2\t0\t\n2/12/2020\tCook\tIllinois\t17031\t2\t0\t\n2/12/2020\tSuffolk\tMassachusetts\t25025\t1\t0\t\n2/12/2020\tBexar\tTexas\t48029\t1\t0\t\n2/12/2020\tSnohomish\tWashington\t53061\t1\t0\t\n2/12/2020\tDane\tWisconsin\t55025\t1\t0\t\n2/13/2020\tMaricopa\tArizona\t4013\t1\t0\t\n2/13/2020\tLos Angeles\tCalifornia\t6037\t1\t0\t\n2/13/2020\tOrange\tCalifornia\t6059\t1\t0\t\n2/13/2020\tSan Diego\tCalifornia\t6073\t1\t0\t\n2/13/2020\tSan Francisco\tCalifornia\t6075\t2\t0\t\n2/13/2020\tSanta Clara\tCalifornia\t6085\t2\t0\t\n2/13/2020\tCook\tIllinois\t17031\t2\t0\t\n2/13/2020\tSuffolk\tMassachusetts\t25025\t1\t0\t\n2/13/2020\tBexar\tTexas\t48029\t2\t0\t\n2/13/2020\tSnohomish\tWashington\t53061\t1\t0\t\n2/13/2020\tDane\tWisconsin\t55025\t1\t0\t\n2/14/2020\tMaricopa\tArizona\t4013\t1\t0\t\n2/14/2020\tLos Angeles\tCalifornia\t6037\t1\t0\t\n2/14/2020\tOrange\tCalifornia\t6059\t1\t0\t\n2/14/2020\tSan Diego\tCalifornia\t6073\t1\t0\t\n2/14/2020\tSan Francisco\tCalifornia\t6075\t2\t0\t\n2/14/2020\tSanta Clara\tCalifornia\t6085\t2\t0\t\n2/14/2020\tCook\tIllinois\t17031\t2\t0\t\n2/14/2020\tSuffolk\tMassachusetts\t25025\t1\t0\t\n2/14/2020\tBexar\tTexas\t48029\t2\t0\t\n2/14/2020\tSnohomish\tWashington\t53061\t1\t0\t\n2/14/2020\tDane\tWisconsin\t55025\t1\t0\t\n2/15/2020\tMaricopa\tArizona\t4013\t1\t0\t\n2/15/2020\tLos Angeles\tCalifornia\t6037\t1\t0\t\n2/15/2020\tOrange\tCalifornia\t6059\t1\t0\t\n2/15/2020\tSan Diego\tCalifornia\t6073\t1\t0\t\n2/15/2020\tSan Francisco\tCalifornia\t6075\t2\t0\t\n2/15/2020\tSanta Clara\tCalifornia\t6085\t2\t0\t\n2/15/2020\tCook\tIllinois\t17031\t2\t0\t\n2/15/2020\tSuffolk\tMassachusetts\t25025\t1\t0\t\n2/15/2020\tBexar\tTexas\t48029\t2\t0\t\n2/15/2020\tSnohomish\tWashington\t53061\t1\t0\t\n2/15/2020\tDane\tWisconsin\t55025\t1\t0\t\n2/16/2020\tMaricopa\tArizona\t4013\t1\t0\t\n2/16/2020\tLos Angeles\tCalifornia\t6037\t1\t0\t\n2/16/2020\tOrange\tCalifornia\t6059\t1\t0\t\n2/16/2020\tSan Diego\tCalifornia\t6073\t1\t0\t\n2/16/2020\tSan Francisco\tCalifornia\t6075\t2\t0\t\n2/16/2020\tSanta Clara\tCalifornia\t6085\t2\t0\t\n2/16/2020\tCook\tIllinois\t17031\t2\t0\t\n2/16/2020\tSuffolk\tMassachusetts\t25025\t1\t0\t\n2/16/2020\tBexar\tTexas\t48029\t2\t0\t\n2/16/2020\tSnohomish\tWashington\t53061\t1\t0\t\n2/16/2020\tDane\tWisconsin\t55025\t1\t0\t\n2/17/2020\tMaricopa\tArizona\t4013\t1\t0\t\n2/17/2020\tLos Angeles\tCalifornia\t6037\t1\t0\t\n2/17/2020\tOrange\tCalifornia\t6059\t1\t0\t\n2/17/2020\tSan Diego\tCalifornia\t6073\t1\t0\t\n2/17/2020\tSan Francisco\tCalifornia\t6075\t2\t0\t\n2/17/2020\tSanta Clara\tCalifornia\t6085\t2\t0\t\n2/17/2020\tCook\tIllinois\t17031\t2\t0\t\n2/17/2020\tSuffolk\tMassachusetts\t25025\t1\t0\t\n2/17/2020\tDouglas\tNebraska\t31055\t10\t0\t\n2/17/2020\tBexar\tTexas\t48029\t2\t0\t\n"
+      },
+      "dateCreated": "May 21, 2020 11:36:53 PM",
+      "dateSubmitted": "May 21, 2020 11:44:16 PM",
+      "dateStarted": "May 21, 2020 11:44:20 PM",
+      "dateFinished": "May 21, 2020 11:44:24 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 1000
+    },
+    {
+      "text": "",
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "version": "v0",
+      "jobName": "paragraph_1590104656606_-265703726",
+      "id": "20200521-234416_205905912_q_TUG8SQ8G6E1590104213",
+      "dateCreated": "May 21, 2020 11:44:16 PM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 1000
+    }
+  ],
+  "name": "eshwar csm demo ZEP",
+  "id": "TUG8SQ8G6E1590104213",
+  "angularObjects": {
+    "2F9TQVWW618351588118853233:shared_process": [],
+    "2F8AEJCAJ18351588118853236:shared_process": [],
+    "2F9UCGXKZ18351588118853236:shared_process": []
+  },
+  "config": {
+    "isDashboard": false,
+    "defaultLang": ""
+  },
+  "info": {},
+  "source": "FCN"
+}
