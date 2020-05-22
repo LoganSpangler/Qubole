@@ -1,0 +1,86 @@
+{
+  "paragraphs": [
+    {
+      "text": "select * from latoya_basketball_proteams limit 10\n",
+      "user": "lleslie@qubole.com",
+      "dateUpdated": "May 22, 2020 7:09:23 PM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [
+            {
+              "name": "year",
+              "index": 0.0,
+              "aggr": "sum"
+            }
+          ],
+          "values": [],
+          "groups": [],
+          "scatter": {
+            "xAxis": {
+              "name": "year",
+              "index": 0.0,
+              "aggr": "sum"
+            },
+            "yAxis": {
+              "name": "lgid",
+              "index": 1.0,
+              "aggr": "sum"
+            }
+          }
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/scala",
+        "editorHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "version": "v0",
+      "jobName": "paragraph_1589403002072_627692842",
+      "id": "20200513-205002_1537397628_q_9AEV9HS5EC1589402997",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TABLE",
+        "msg": "year\tlgid\ttmid\tfranchid\tconfid\tdivid\trank\tconfrank\tplayoff\tname\to_fgm\to_fga\to_ftm\to_fta\to_3pm\to_3pa\to_oreb\to_dreb\to_reb\to_asts\to_pf\to_stl\to_to\to_blk\to_pts\td_fgm\td_fga\td_ftm\td_fta\td_3pm\td_3pa\td_oreb\td_dreb\td_reb\td_asts\td_pf\td_stl\td_to\td_blk\td_pts\to_tmrebound\td_tmrebound\thomewon\thomelost\tawaywon\tawaylost\tneutwon\tneutloss\tconfwon\tconfloss\tdivwon\tdivloss\tpace\twon\tlost\tgames\tmin\tarena\tattendance\tbbtmid\n\"feeribo01\"\t\"All-NBA First Team\"\t\"1946\"\t\"NBA\"\t\t\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\t\n\"fulksjo01\"\t\"All-NBA First Team\"\t\"1946\"\t\"NBA\"\t\t\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\t\n\"mckinho01\"\t\"All-NBA First Team\"\t\"1946\"\t\"NBA\"\t\t\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\t\n\"miasest01\"\t\"All-NBA First Team\"\t\"1946\"\t\"NBA\"\t\t\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\t\n\"zasloma01\"\t\"All-NBA First Team\"\t\"1946\"\t\"NBA\"\t\t\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\t\n\"baumhfr01\"\t\"All-NBA Second Team\"\t\"1946\"\t\"NBA\"\t\t\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\t\n\"calveer01\"\t\"All-NBA Second Team\"\t\"1946\"\t\"NBA\"\t\t\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\t\n\"halbech01\"\t\"All-NBA Second Team\"\t\"1946\"\t\"NBA\"\t\t\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\t\n\"loganjo01\"\t\"All-NBA Second Team\"\t\"1946\"\t\"NBA\"\t\t\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\t\n\"scolafr01\"\t\"All-NBA Second Team\"\t\"1946\"\t\"NBA\"\t\t\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\tnull\t\n"
+      },
+      "dateCreated": "May 13, 2020 8:49:57 PM",
+      "dateSubmitted": "May 22, 2020 7:09:17 PM",
+      "dateStarted": "May 22, 2020 7:09:17 PM",
+      "dateFinished": "May 22, 2020 7:09:20 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 1000
+    },
+    {
+      "text": "",
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "version": "v0",
+      "jobName": "paragraph_1589403129172_1507167",
+      "id": "20200513-205209_503674166_q_9AEV9HS5EC1589402997",
+      "dateCreated": "May 13, 2020 8:52:09 PM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 1000
+    }
+  ],
+  "name": "CSMdemo_Latoya_MensProBallTeam",
+  "id": "9AEV9HS5EC1589402997",
+  "angularObjects": {
+    "2F9TQVWW618351588118853233:shared_process": [],
+    "2F8AEJCAJ18351588118853236:shared_process": [],
+    "2F9UCGXKZ18351588118853236:shared_process": []
+  },
+  "config": {
+    "isDashboard": false,
+    "defaultLang": ""
+  },
+  "info": {},
+  "source": "FCN"
+}
