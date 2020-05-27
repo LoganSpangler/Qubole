@@ -1,0 +1,190 @@
+{
+  "paragraphs": [
+    {
+      "text": "%sql\nselect * from default.logan_robinhood limit 100",
+      "user": "logan@qubole.com",
+      "dateUpdated": "May 22, 2020 10:02:33 PM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "multiBarChart",
+          "height": 300.0,
+          "optionOpen": true,
+          "keys": [
+            {
+              "name": "simple_name",
+              "index": 0.0,
+              "aggr": "sum",
+              "$$hashKey": "object:354"
+            }
+          ],
+          "values": [
+            {
+              "name": "market_cap",
+              "index": 13.0,
+              "aggr": "sum",
+              "$$hashKey": "object:366"
+            }
+          ],
+          "groups": [
+            {
+              "name": "sector",
+              "index": 19.0,
+              "aggr": "sum",
+              "$$hashKey": "object:360"
+            }
+          ],
+          "scatter": {
+            "xAxis": {
+              "name": "simple_name",
+              "index": 0.0,
+              "aggr": "sum"
+            },
+            "yAxis": {
+              "name": "name",
+              "index": 1.0,
+              "aggr": "sum"
+            }
+          }
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "JOB UI",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            "https://us.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.0.58%3A8088%2Fproxy%2Fapplication_1590183193668_0001/jobs/job?spark\u003dtrue\u0026id\u003d2"
+          ],
+          "interpreterSettingId": "2FA2JZPNG18361588703867562"
+        }
+      },
+      "paragraphProgress": {
+        "jobs": [
+          {
+            "id": 2,
+            "jobUrl": "https://us.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.0.58%3A8088%2Fproxy%2Fapplication_1590183193668_0001/jobs/job?spark\u003dtrue\u0026id\u003d2",
+            "numTasks": 1,
+            "numCompletedTasks": 1,
+            "stages": [
+              {
+                "id": 2,
+                "completed": true,
+                "status": "Completed",
+                "stageUrl": "https://us.qubole.com/cluster-proxy?encodedUrl\u003dhttp%3A%2F%2F10.0.0.58%3A8088%2Fproxy%2Fapplication_1590183193668_0001/stages/stage/?id\u003d2\u0026attempt\u003d0",
+                "numCompleteTasks": 1,
+                "numActiveTasks": 0,
+                "numFailedTasks": 0,
+                "numTotalTasks": 1
+              }
+            ],
+            "status": "Success"
+          }
+        ],
+        "numCompletedTasks": 1,
+        "numTasks": 1,
+        "truncated": false
+      },
+      "version": "v1",
+      "jobName": "paragraph_1589756787386_-1957066814",
+      "id": "20200517-230627_677551725_q_1WAEZFSAMW1589756749",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TABLE",
+        "msg": "{\"exceeded\":-1,\"data\":[[\"simple_name\",\"name\",\"symbol\",\"list_date\",\"type\",\"open\",\"high\",\"low\",\"volume\",\"average_volume\",\"high_52_weeks\",\"dividend_yield\",\"low_52_weeks\",\"market_cap\",\"pb_ratio\",\"pe_ratio\",\"shares_outstanding\",\"headquarters_city\",\"headquarters_state\",\"sector\",\"industry\",\"num_employees\",\"year_founded\"],[\"simple_name\",\"name\",\"symbol\",\"list_date\",\"type\",\"open\",\"high\",\"low\",\"volume\",\"average_volume\",\"high_52_weeks\",\"dividend_yield\",\"low_52_weeks\",\"market_cap\",\"pb_ratio\",\"pe_ratio\",\"shares_outstanding\",\"headquarters_city\",\"headquarters_state\",\"sector\",\"industry\",\"num_employees\",\"year_founded\"],[\"Aurora Cannabis\",\"Aurora Cannabis Inc. Common Shares\",\"ACB\",\"7/10/14\",\"stock\",\"1.35\",\"1.43\",\"1.32\",\"9579671\",\"26813041.8\",\"10.32\",\"\",\"1.31\",\"1576224321\",\"0.536001\",\"\",\"1168980000\",\"Edmonton\",\"Alberta\",\"Process Industries\",\"Agricultural Commodities/Milling\",\"2779\",\"2006\"],[\"Ford\",\"Ford Motor Company\",\"F\",\"1/2/90\",\"stock\",\"7.09\",\"7.09\",\"6.92\",\"38094100\",\"98639445.3\",\"10.56\",\"8.33333\",\"6.67\",\"27596712738\",\"0.883266\",\"615.385\",\"3965050000\",\"Dearborn\",\"Michigan\",\"Consumer Durables\",\"Motor Vehicles\",\"190000\",\"1903\"],[\"GE\",\"General Electric Company\",\"GE\",\"1/2/90\",\"stock\",\"11.06\",\"11.12\",\"10.765\",\"33418406\",\"90629654.7\",\"13.26\",\"0.35682\",\"7.65\",\"95093702400\",\"3.46019\",\"147.63\",\"8738434000\",\"Boston\",\"Massachusetts\",\"Electronic Technology\",\"Aerospace And Defense\",\"205000\",\"1878\"],[\"Microsoft\",\"Microsoft Corporation Common Stock\",\"MSFT\",\"9/17/87\",\"stock\",\"168.48\",\"169.28\",\"165.62\",\"21801356\",\"66904114.6\",\"190.7\",\"1.18062\",\"109.01\",\"1230000000000\",\"11.9437\",\"30.0787\",\"7606050000\",\"Redmond\",\"Washington\",\"Technology Services\",\"Packaged Software\",\"144000\",\"1975\"],[\"GoPro\",\"GoPro, Inc. Class A Common Stock\",\"GPRO\",\"6/26/14\",\"stock\",\"4.03\",\"4.07\",\"3.91\",\"1971032\",\"5832852.4\",\"7.645\",\"\",\"3.25\",\"592004311\",\"2.4739\",\"\",\"155996000\",\"San Mateo\",\"California\",\"Consumer Durables\",\"Electronics/Appliances\",\"926\",\"2002\"],[\"Fitbit\",\"Fitbit, Inc. Class A common stock\",\"FIT\",\"6/18/15\",\"stock\",\"6.44\",\"6.45\",\"6.34\",\"2054547\",\"7932401.7\",\"7.26\",\"\",\"2.81\",\"1695108841\",\"3.52806\",\"\",\"265275245\",\"San Francisco\",\"California\",\"Consumer Durables\",\"Other Consumer Specialties\",\"1684\",\"2007\"],[\"Apple\",\"Apple Inc. Common Stock\",\"AAPL\",\"1/2/90\",\"stock\",\"296.44\",\"298.48\",\"293.13\",\"27435061\",\"63424086.5\",\"327.85\",\"1.03076\",\"169.5\",\"1200000000000\",\"14.6348\",\"23.5997\",\"4375480000\",\"Cupertino\",\"California\",\"Electronic Technology\",\"Telecommunications Equipment\",\"137000\",\"1976\"],[\"Plug Power\",\"Plug Power, Inc. Common Stock\",\"PLUG\",\"10/29/99\",\"stock\",\"4.61\",\"4.66\",\"4.45\",\"7342266\",\"36620084\",\"6.05\",\"\",\"1.55\",\"1332686890\",\"-74.7307\",\"\",\"307071000\",\"Latham\",\"New York\",\"Electronic Technology\",\"Electronic Components\",\"685\",\"1997\"],[\"Disney\",\"The Walt Disney Company\",\"DIS\",\"1/2/90\",\"stock\",\"119\",\"119.2\",\"115.5\",\"6792219\",\"20819523.9\",\"153.41\",\"1.46691\",\"107.32\",\"212000000000\",\"2.3807\",\"19.1741\",\"1805440000\",\"Burbank\",\"California\",\"Consumer Services\",\"Media Conglomerates\",\"223000\",\"1923\"],[\"AMD\",\"Advanced Micro Devices, Inc. Common Stock\",\"AMD\",\"1/2/90\",\"stock\",\"48.25\",\"49.11\",\"47.22\",\"54132667\",\"100530254.9\",\"59.27\",\"\",\"21.035\",\"53196203125\",\"19.6421\",\"155.862\",\"1169660000\",\"Santa Clara\",\"California\",\"Electronic Technology\",\"Semiconductors\",\"11400\",\"1969\"],[\"Snap\",\"Snap Inc.\",\"SNAP\",\"3/2/17\",\"stock\",\"13.82\",\"13.85\",\"13.21\",\"16370886\",\"27795857.1\",\"19.755\",\"\",\"9.16\",\"19246555500\",\"8.4889\",\"\",\"1415796097\",\"Santa Monica\",\"California\",\"Technology Services\",\"Internet Software Or Services\",\"3195\",\"2010\"],[\"Cronos Group\",\"Cronos Group Inc. Common Share\",\"CRON\",\"2/27/18\",\"stock\",\"5.51\",\"5.98\",\"5.4\",\"4094259\",\"8374256.2\",\"24.37\",\"\",\"5.14\",\"1828824500\",\"1.1269\",\"1.42\",\"343764207\",\"Toronto\",\"Ontario\",\"Process Industries\",\"Agricultural Commodities Or Milling\",\"297\",\"2012\"],[\"Canopy Growth\",\"Canopy Growth Corporation Common Shares\",\"CGC\",\"5/24/18\",\"stock\",\"17.88\",\"18.53\",\"17.51\",\"2419704\",\"6894687.5\",\"52.74\",\"\",\"13.81\",\"6556200529\",\"1.4945\",\"\",\"349651000\",\"Smith Falls\",\"Ontario\",\"Process Industries\",\"Agricultural Commodities/Milling\",\"2917\",\"2009\"],[\"Hexo\",\"HEXO Corp.\",\"HEXO\",\"1/23/19\",\"stock\",\"1.15\",\"1.265\",\"1.14\",\"1343577\",\"3635567.2\",\"8.4\",\"\",\"1.05\",\"295991679\",\"0.729562\",\"\",\"272140000\",\"Gatineau\",\"Qubec\",\"Process Industries\",\"Agricultural Commodities/Milling\",\"1260\",\"2013\"],[\"Tesla\",\"Tesla, Inc. Common Stock\",\"TSLA\",\"6/29/10\",\"stock\",\"764.48\",\"766.52\",\"724.75\",\"9404112\",\"21555247.8\",\"968.9899\",\"\",\"176.9919\",\"123000000000\",\"20.3377\",\"\",\"184389000\",\"Palo Alto\",\"California\",\"Consumer Durables\",\"Motor Vehicles\",\"48016\",\"2003\"],[\"Chesapeake Energy\",\"Chesapeake Energy Corp.\",\"CHK\",\"5/3/95\",\"stock\",\"0.268\",\"0.284\",\"0.2389\",\"62803338\",\"138683887.3\",\"3.57\",\"\",\"0.1999\",\"537510620\",\"0.155132\",\"\",\"1954580000\",\"Oklahoma City\",\"Oklahoma\",\"Energy Minerals\",\"Oil \\u0026 Gas Production\",\"2300\",\"1989\"],[\"Facebook\",\"Facebook, Inc. Class A Common Stock\",\"FB\",\"5/18/12\",\"stock\",\"189.14\",\"190.2781\",\"186.39\",\"10039256\",\"22324071.8\",\"224.2\",\"\",\"159.28\",\"530000000000\",\"5.2463\",\"28.88\",\"2852000000\",\"Menlo Park\",\"California\",\"Technology Services\",\"Internet Software Or Services\",\"44942\",\"2004\"],[\"Alibaba\",\"American Depositary Shares, each represents eight Ordinary Shares\",\"BABA\",\"9/19/14\",\"adr\",\"209.49\",\"212.49\",\"208.85\",\"7292061\",\"20990418.7\",\"231.14\",\"\",\"147.95\",\"556000000000\",\"5.298\",\"22.2527\",\"2682722500\",\"Hangzhou\",\"Zhejiang\",\"Retail Trade\",\"Internet Retail\",\"101958\",\"1999\"],[\"Uber\",\"Uber Technologies, Inc.\",\"UBER\",\"5/10/19\",\"stock\",\"33.93\",\"34.48\",\"32.29\",\"19065670\",\"42251828.3\",\"47.08\",\"\",\"25.58\",\"58143984375\",\"3.97414\",\"\",\"1716680000\",\"San Francisco\",\"California\",\"Technology Services\",\"Packaged Software\",\"22263\",\"2009\"],[\"Zynga\",\"Zynga Inc. Class A Common Stock\",\"ZNGA\",\"12/16/11\",\"stock\",\"7.01\",\"7.14\",\"6.935\",\"9838269\",\"22250263.5\",\"7.29\",\"\",\"4.985\",\"6347136719\",\"3.35207\",\"162.093\",\"945922000\",\"San Francisco\",\"California\",\"Technology Services\",\"Internet Software/Services\",\"1883\",\"2007\"],[\"Twitter\",\"Twitter, Inc.\",\"TWTR\",\"11/7/13\",\"stock\",\"35.76\",\"35.77\",\"34.775\",\"5513930\",\"25536385.7\",\"45.855\",\"\",\"28.63\",\"25775052734\",\"3.20826\",\"19.1982\",\"776357000\",\"San Francisco\",\"California\",\"Technology Services\",\"Internet Software/Services\",\"4900\",\"2006\"],[\"NIO\",\"NIO Inc. American depositary shares, each representing one Class A ordinary share\",\"NIO\",\"9/12/18\",\"adr\",\"4.03\",\"4.06\",\"3.77\",\"33044870\",\"82614293.9\",\"10.63\",\"\",\"1.19\",\"4347495117\",\"-8.5781\",\"\",\"772132049\",\"Jiading\",\"Shanghai\",\"Consumer Durables\",\"Motor Vehicles\",\"9834\",\"2014\"],[\"Bank of America\",\"Bank of America Corporation\",\"BAC\",\"1/2/90\",\"stock\",\"28.29\",\"28.29\",\"27.4\",\"57975778\",\"98893763.4\",\"35.72\",\"2.45148\",\"26.21\",\"249000000000\",\"1.07501\",\"10.6676\",\"8728530000\",\"Charlotte\",\"North Carolina\",\"Finance\",\"Major Banks\",\"208000\",\"1904\"],[\"Amazon\",\"Amazon.com, Inc. Common Stock\",\"AMZN\",\"5/15/97\",\"stock\",\"1945.11\",\"1952.5\",\"1922.2093\",\"2394324\",\"6323474.2\",\"2185.95\",\"\",\"1586.57\",\"938000000000\",\"15.6795\",\"84.9835\",\"497810000\",\"Seattle\",\"Washington\",\"Retail Trade\",\"Internet Retail\",\"798000\",\"1994\"],[\"AT\\u0026T\",\"AT\\u0026T Inc.\",\"T\",\"1/2/90\",\"stock\",\"36.97\",\"37.6\",\"36.725\",\"17507134\",\"54623322.7\",\"39.7\",\"5.59441\",\"29.67\",\"260000000000\",\"1.4295\",\"19.1\",\"7254555140\",\"Dallas\",\"Texas\",\"Communications\",\"Major Telecommunications\",\"246000\",\"1983\"],[\"Inovio\",\"Inovio Pharmaceuticals, Inc. Common Stock\",\"INO\",\"8/23/99\",\"stock\",\"8.44\",\"9.4\",\"7.34\",\"112564871\",\"28160892\",\"9.4\",\"\",\"1.915\",\"433825226\",\"8.07178\",\"\",\"101361000\",\"Plymouth Meeting\",\"Pennsylvania\",\"Health Technology\",\"Medical Specialties\",\"281\",\"1983\"],[\"Aphria\",\"Aphria Inc. Common Shares\",\"APHA\",\"11/2/18\",\"stock\",\"3.43\",\"3.64\",\"3.32\",\"3213828\",\"6168533.3\",\"10.68\",\"\",\"3.25\",\"915729949\",\"0.679869\",\"\",\"252928000\",\"Leamington\",\"Ontario\",\"Process Industries\",\"Agricultural Commodities/Milling\",\"620\",\"2011\"],[\"Starbucks\",\"Starbucks Corporation Common Stock\",\"SBUX\",\"6/26/92\",\"stock\",\"78.83\",\"80.2\",\"77.88\",\"4971112\",\"11343543\",\"99.72\",\"1.99077\",\"69.03\",\"92053289063\",\"-13.6564\",\"26.9251\",\"1173700000\",\"Seattle\",\"Washington\",\"Consumer Services\",\"Restaurants\",\"346000\",\"1985\"],[\"Groupon\",\"Groupon, Inc. Common Stock\",\"GRPN\",\"11/4/11\",\"stock\",\"1.23\",\"1.26\",\"1.19\",\"5201713\",\"36433277.9\",\"3.82\",\"\",\"1.17\",\"758192139\",\"1.8672\",\"\",\"565815000\",\"Chicago\",\"Illinois\",\"Commercial Services\",\"Advertising/Marketing Services\",\"6345\",\"2007\"],[\"Sprint\",\"Sprint  Corporation\",\"S\",\"1/2/90\",\"stock\",\"9.19\",\"9.405\",\"9.19\",\"12154843\",\"47510298.5\",\"10.16\",\"\",\"4.26\",\"37784070313\",\"1.51995\",\"\",\"4111430000\",\"Overland Park\",\"Kansas\",\"Communications\",\"Wireless Telecommunications\",\"28500\",\"2012\"],[\"NVIDIA\",\"NVIDIA Corporation Common Stock\",\"NVDA\",\"1/22/99\",\"stock\",\"270.15\",\"279.1\",\"267.2\",\"8253668\",\"22855646.9\",\"316.32\",\"0.23152\",\"132.6\",\"165000000000\",\"13.8623\",\"61.099\",\"612000000\",\"Santa Clara\",\"California\",\"Electronic Technology\",\"Semiconductors\",\"13775\",\"1993\"],[\"Netflix\",\"Netflix, Inc. Common Stock\",\"NFLX\",\"5/23/02\",\"stock\",\"377.26\",\"379\",\"370.51\",\"2333234\",\"7797938.3\",\"393.52\",\"\",\"252.28\",\"162000000000\",\"22.0527\",\"92.2081\",\"438807000\",\"Los Gatos\",\"California\",\"Consumer Services\",\"Cable/Satellite TV\",\"8600\",\"1997\"],[\"Virgin Galactic Holdings\",\"Virgin Galactic Holdings, Inc.\",\"SPCE\",\"10/25/19\",\"stock\",\"25.52\",\"25.725\",\"22.86\",\"10704364\",\"62771423.2\",\"42.49\",\"\",\"6.9\",\"4822255300\",\"3.31736\",\"435.8\",\"196001038\",\"Las Cruces\",\"New Mexico\",\"Electronic Technology\",\"Aerospace And Defense\",\"906\",\"2017\"],[\"Vivint Solar\",\"VIVINT SOLAR, INC.\",\"VSLR\",\"10/1/14\",\"stock\",\"12.07\",\"12.15\",\"11.7034\",\"828060\",\"3145770.5\",\"12.9899\",\"\",\"4.38\",\"1427208700\",\"6.6406\",\"\",\"122088000\",\"Lehi\",\"Utah\",\"Utilities\",\"Electric Utilities\",\"2542\",\"2011\"],[\"Coca-Cola\",\"Coca-Cola Company\",\"KO\",\"1/2/90\",\"stock\",\"56.465\",\"57.7\",\"56.41\",\"5619065\",\"19839548.7\",\"60.13\",\"2.93276\",\"44.61\",\"229000000000\",\"12.6093\",\"27.0445\",\"4290280000\",\"Atlanta\",\"Georgia\",\"Consumer Non-Durables\",\"Beverages: Non-Alcoholic\",\"86200\",\"1886\"],[\"Vanguard S\\u0026P 500 ETF\",\"Vanguard S\\u0026P 500 ETF\",\"VOO\",\"9/9/10\",\"etp\",\"281.255\",\"282.5207\",\"278.7\",\"2616220\",\"9885948.9\",\"311.59\",\"1.96248\",\"250.42\",\"137000000000\",\"3.66043\",\"24.7585\",\"483033198.8\",\"\",\"\",\"Miscellaneous\",\"Investment Trusts Or Mutual Funds\",\"\",\"\"],[\"Square\",\"Square, Inc.\",\"SQ\",\"11/19/15\",\"stock\",\"78.51\",\"78.88\",\"75.83\",\"7040907\",\"16073386.5\",\"87.25\",\"\",\"54.4101\",\"36268312988\",\"20.3573\",\"100.137\",\"435237158\",\"San Francisco\",\"California\",\"Technology Services\",\"Information Technology Services\",\"3835\",\"2009\"],[\"Nokia\",\"Nokia Corporation\",\"NOK\",\"4/25/95\",\"adr\",\"3.84\",\"3.84\",\"3.77\",\"15245584\",\"46871701.3\",\"6.42\",\"4.34402\",\"3.33\",\"21395210539\",\"1.28064\",\"2807.14\",\"5616634837\",\"Espoo\",\"Uusimaa\",\"Electronic Technology\",\"Telecommunications Equipment\",\"\",\"1865\"],[\"Beyond Meat\",\"Beyond Meat, Inc. Common Stock\",\"BYND\",\"5/2/19\",\"stock\",\"99.02\",\"101.35\",\"97.72\",\"4423340\",\"8788723.4\",\"239.71\",\"\",\"45\",\"5515439453\",\"15.4065\",\"\",\"61521900\",\"El Segundo\",\"California\",\"Consumer Non-Durables\",\"Food: Major Diversified\",\"375\",\"2009\"],[\"Sirius XM\",\"Sirius XM Holdings Inc. Common Stock\",\"SIRI\",\"9/13/94\",\"stock\",\"6.56\",\"6.66\",\"6.56\",\"8078666\",\"36221549.2\",\"7.4\",\"0.81282\",\"5.23\",\"27984404297\",\"-38.8443\",\"32.8321\",\"4413940000\",\"New York\",\"New York\",\"Consumer Services\",\"Broadcasting\",\"4534\",\"1990\"],[\"Visa\",\"VISA Inc.\",\"V\",\"3/19/08\",\"stock\",\"190.36\",\"190.7885\",\"186.17\",\"5231808\",\"15029172.2\",\"214.17\",\"0.62393\",\"144.5\",\"390000000000\",\"13.8762\",\"36.0486\",\"2147606000\",\"San Francisco\",\"California\",\"Finance\",\"Finance/Rental/Leasing\",\"19500\",\"1958\"],[\"Slack\",\"Slack Technologies, Inc.\",\"WORK\",\"6/20/19\",\"stock\",\"27.06\",\"27.47\",\"26.7389\",\"4508714\",\"11748641.1\",\"42\",\"\",\"19.53\",\"14871273926\",\"20.406\",\"\",\"550380136\",\"San Francisco\",\"California\",\"Technology Services\",\"Packaged Software\",\"1502\",\"2009\"],[\"Catalyst Pharmaceuticals\",\"Catalyst Pharmaceuticals, Inc. Common Stock\",\"CPRX\",\"10/5/01\",\"stock\",\"4.11\",\"4.31\",\"4.085\",\"719321\",\"2698655.5\",\"7.67\",\"\",\"2.232\",\"433827850\",\"5.81388\",\"52.7578\",\"103047000\",\"Coral Gables\",\"Florida\",\"Health Technology\",\"Pharmaceuticals: Other\",\"51\",\"2002\"],[\"Lyft\",\"Lyft, Inc. Class A Common Stock\",\"LYFT\",\"3/29/19\",\"stock\",\"38.12\",\"39.74\",\"37.44\",\"6871900\",\"10992520.3\",\"88.6\",\"\",\"35\",\"11534950745\",\"3.91327\",\"\",\"302595629\",\"San Francisco\",\"California\",\"Technology Services\",\"Packaged Software\",\"4791\",\"2007\"],[\"Nike\",\"Nike, Inc.\",\"NKE\",\"1/2/90\",\"stock\",\"92.08\",\"92.8\",\"90.85\",\"3007605\",\"10883190.3\",\"105.62\",\"1.0574\",\"77.07\",\"139000000000\",\"15.7153\",\"32.4703\",\"1557360000\",\"Beaverton\",\"Oregon\",\"Consumer Non-Durables\",\"Apparel/Footwear\",\"76700\",\"1964\"],[\"FuelCell Energy\",\"FuelCell Energy, Inc. Common Stock\",\"FCEL\",\"6/7/00\",\"stock\",\"1.97\",\"1.9968\",\"1.9\",\"7340529\",\"26217806.2\",\"3\",\"\",\"0.134\",\"411387604\",\"4.93266\",\"\",\"210968000\",\"Danbury\",\"Connecticut\",\"Electronic Technology\",\"Electronic Equipment/Instruments\",\"538\",\"1969\"],[\"Nintendo\",\"Nintendo Co Ltd ADR\",\"NTDOY\",\"2/22/00\",\"adr\",\"43.65\",\"43.65\",\"43.17\",\"98386\",\"385524.1\",\"53.24\",\"\",\"33.055\",\"44274186201\",\"2.98812\",\"20.2189\",\"952990072\",\"Kyoto\",\"Kyoto\",\"Consumer Durables\",\"Recreational Products\",\"5944\",\"1889\"],[\"SPDR S\\u0026P 500 ETF\",\"SPDR S\\u0026P 500 ETF Trust\",\"SPY\",\"1/29/93\",\"etp\",\"306.12\",\"307.53\",\"303.34\",\"82853656\",\"207784443.7\",\"339.08\",\"1.81771\",\"272.42\",\"272000000000\",\"3.65951\",\"24.7454\",\"879032116\",\"\",\"\",\"Miscellaneous\",\"Investment Trusts Or Mutual Funds\",\"\",\"\"],[\"Corbus Pharmaceuticals\",\"Corbus Pharmaceuticals Holdings, Inc. Common Stock\",\"CRBP\",\"10/27/14\",\"stock\",\"4.89\",\"4.99\",\"4.74\",\"270183\",\"1101994.5\",\"8.09\",\"\",\"4.18\",\"338864716\",\"10.6694\",\"\",\"64673000\",\"Norwood\",\"Massachusetts\",\"Health Technology\",\"Biotechnology\",\"77\",\"2009\"],[\"Moderna\",\"Moderna, Inc. Common Stock\",\"MRNA\",\"12/7/18\",\"stock\",\"27.99\",\"28.72\",\"26.85\",\"7160670\",\"30952496.8\",\"36\",\"\",\"11.54\",\"9558913086\",\"8.55945\",\"\",\"368643000\",\"Cambridge\",\"Massachusetts\",\"Health Technology\",\"Biotechnology\",\"830\",\"2010\"],[\"Intel\",\"Intel Corporation Common Stock\",\"INTC\",\"7/9/86\",\"stock\",\"56.98\",\"57.78\",\"56.16\",\"12255383\",\"35700285\",\"69.29\",\"2.26882\",\"42.86\",\"237000000000\",\"3.22038\",\"12.364\",\"4277000000\",\"Santa Clara\",\"California\",\"Electronic Technology\",\"Semiconductors\",\"110800\",\"1968\"],[\"Activision Blizzard\",\"Activision Blizzard, Inc. Common Stock\",\"ATVI\",\"10/25/93\",\"stock\",\"59.88\",\"61.79\",\"59.6\",\"3215543\",\"8148857.8\",\"64.53\",\"0.67668\",\"40.89\",\"44714875000\",\"3.63758\",\"31.0814\",\"769222000\",\"Santa Monica\",\"California\",\"Consumer Durables\",\"Recreational Products\",\"9200\",\"1979\"],[\"Glu Mobile\",\"Glu Mobile Inc. Common Stock\",\"GLUU\",\"3/22/07\",\"stock\",\"6.9\",\"7.05\",\"6.855\",\"786193\",\"4867878.9\",\"11.75\",\"\",\"4.11\",\"1037996216\",\"5.48901\",\"123.582\",\"145786000\",\"San Francisco\",\"California\",\"Technology Services\",\"Internet Software/Services\",\"715\",\"2001\"],[\"New Residential Investment\",\"NEW RESIDENTIAL INVESTMENT CORP\",\"NRZ\",\"5/16/13\",\"reit\",\"16.36\",\"16.56\",\"16.2\",\"6530015\",\"7783860.6\",\"17.66\",\"12.0919\",\"13.63\",\"6465989258\",\"1.02056\",\"12.2992\",\"415552000\",\"New York\",\"New York\",\"Finance\",\"Real Estate Investment Trusts\",\"3\",\"2011\"],[\"OrganiGram\",\"Organigram Holdings Inc. Common Shares\",\"OGI\",\"\",\"stock\",\"2.2\",\"2.28\",\"2.125\",\"2449382\",\"4194285\",\"8.44\",\"\",\"1.89\",\"363169954\",\"1.42636\",\"\",\"163591000\",\"Moncton\",\"New Brunswick\",\"Process Industries\",\"Agricultural Commodities/Milling\",\"770\",\"2010\"],[\"Yamana Gold\",\"Yamana Gold, Inc.\",\"AUY\",\"12/5/03\",\"stock\",\"4.24\",\"4.26\",\"4.08\",\"14708739\",\"34487436.6\",\"4.94\",\"1.25628\",\"1.78\",\"3703709749\",\"0.903835\",\"16.765\",\"950607000\",\"Toronto\",\"Ontario\",\"Non-Energy Minerals\",\"Precious Metals\",\"11440\",\"1995\"],[\"Tilray\",\"Tilray, Inc. Class 2 Common Stock\",\"TLRY\",\"7/19/18\",\"stock\",\"13.45\",\"13.45\",\"12.25\",\"2819930\",\"4098883.8\",\"79.99\",\"\",\"12.25\",\"1438507584\",\"3.1402\",\"\",\"99688667\",\"Nanaimo\",\"British Columbia\",\"Process Industries\",\"Agricultural Commodities/Milling\",\"688\",\"2018\"],[\"Boeing\",\"Boeing Company\",\"BA\",\"1/2/90\",\"stock\",\"284.61\",\"285.78\",\"277.02\",\"3348073\",\"8035268.9\",\"444.5\",\"2.84164\",\"269.6\",\"155000000000\",\"-18.3316\",\"\",\"563152000\",\"Chicago\",\"Illinois\",\"Electronic Technology\",\"Aerospace \\u0026 Defense\",\"161100\",\"1916\"],[\"Micron Technology\",\"Micron Technology, Inc. Common Stock\",\"MU\",\"1/2/90\",\"stock\",\"53.02\",\"54.445\",\"52.21\",\"15410139\",\"34285180.5\",\"61.19\",\"\",\"32.14\",\"58387539063\",\"1.65714\",\"17.7079\",\"1110870000\",\"Boise\",\"Idaho\",\"Electronic Technology\",\"Semiconductors\",\"37000\",\"1978\"],[\"Cisco\",\"Cisco Systems, Inc. Common Stock\",\"CSCO\",\"1/3/94\",\"stock\",\"40.73\",\"40.85\",\"39.8\",\"12029355\",\"43827026.8\",\"58.26\",\"3.49769\",\"38.35\",\"170000000000\",\"4.9138\",\"16.1097\",\"4241000000\",\"San Jose\",\"California\",\"Technology Services\",\"Information Technology Services\",\"75900\",\"1984\"],[\"Tencent\",\"Tencent Holdings Limited Unsponsored ADR Representing B Shares (Cayman Islands)\",\"TCEHY\",\"6/25/04\",\"adr\",\"50.78\",\"51.18\",\"50.73\",\"2684352\",\"5962472.8\",\"54.25\",\"0.23009\",\"40.04\",\"476000000000\",\"8.4052\",\"37.9\",\"9477421967\",\"Shenzhen\",\"Guangdong\",\"Communications\",\"Specialty Telecommunications\",\"54309\",\"1998\"],[\"Viking Therapeutics\",\"Viking Therapeutics, Inc. Common Stock\",\"VKTX\",\"4/29/15\",\"stock\",\"6.01\",\"6.37\",\"6.01\",\"747043\",\"1571221.8\",\"11.03\",\"\",\"5.69\",\"427802887\",\"1.59137\",\"\",\"72264000\",\"San Diego\",\"California\",\"Health Technology\",\"Biotechnology\",\"19\",\"2012\"],[\"Berkshire Hathaway\",\"BERKSHIRE HATHAWAY Class B\",\"BRK.B\",\"6/29/98\",\"stock\",\"212.14\",\"212.98\",\"209.3\",\"2855610\",\"8521561.1\",\"231.61\",\"\",\"195.4\",\"502000000000\",\"1.24875\",\"6.55143\",\"2435990000\",\"Omaha\",\"Nebraska\",\"Finance\",\"Multi-Line Insurance\",\"391500\",\"1839\"],[\"Luckin Coffee\",\"Luckin Coffee Inc. American Depositary Shares\",\"LK\",\"5/16/19\",\"adr\",\"38.76\",\"40.92\",\"38.57\",\"7286190\",\"13798702.4\",\"51.38\",\"\",\"13.71\",\"9507360352\",\"10.4017\",\"\",\"36891875\",\"Fujian\",\"Fujian\",\"Consumer Non-Durables\",\"Food: Specialty/Candy\",\"12907\",\"2017\"],[\"Roku\",\"Roku, Inc. Class A Common Stock\",\"ROKU\",\"9/27/17\",\"stock\",\"110.01\",\"110.45\",\"105.655\",\"5869598\",\"15459094.2\",\"176.55\",\"\",\"55.02\",\"13907794678\",\"19.6851\",\"\",\"123556000\",\"Los Gatos\",\"California\",\"Consumer Durables\",\"Electronics/Appliances\",\"1650\",\"2002\"],[\"PayPal\",\"PayPal Holdings, Inc. Common Stock\",\"PYPL\",\"7/6/15\",\"stock\",\"112.09\",\"113.57\",\"110.64\",\"3052556\",\"11511309.6\",\"124.45\",\"\",\"94.51\",\"129000000000\",\"7.625\",\"53\",\"1173000000\",\"San Jose\",\"California\",\"Technology Services\",\"Data Processing Services\",\"23200\",\"1998\"],[\"GM\",\"General Motors Company\",\"GM\",\"11/18/10\",\"stock\",\"31\",\"31\",\"30.36\",\"6183111\",\"14624292\",\"41.9\",\"4.83768\",\"29.33\",\"43584558594\",\"1.05255\",\"6.87031\",\"1429000000\",\"Detroit\",\"Michigan\",\"Consumer Durables\",\"Motor Vehicles\",\"164000\",\"1908\"],[\"ETFMG Alternative Harvest\",\"ETFMG Alternative Harvest ETF\",\"MJ\",\"12/3/15\",\"etp\",\"13.92\",\"14.38\",\"13.79\",\"354873\",\"1090815.6\",\"39.25\",\"6.33357\",\"12.5\",\"621576000\",\"1.76531\",\"-45.1462\",\"43650000\",\"\",\"\",\"Miscellaneous\",\"Investment Trusts Or Mutual Funds\",\"\",\"\"],[\"Vanguard Total Stock Market ETF\",\"Vanguard Total Stock Market ETF\",\"VTI\",\"5/31/01\",\"etp\",\"155.56\",\"156.01\",\"154.0654\",\"3196796\",\"9939672\",\"172.5567\",\"1.85402\",\"139.62\",\"137000000000\",\"3.40314\",\"28.3197\",\"874489686.1\",\"\",\"\",\"Miscellaneous\",\"Investment Trusts Or Mutual Funds\",\"\",\"\"],[\"Penn National Gaming\",\"Penn National Gaming, Inc. Common Stock\",\"PENN\",\"5/26/94\",\"stock\",\"26.52\",\"26.96\",\"24.43\",\"2901905\",\"4751177\",\"39.18\",\"\",\"16.72\",\"3427547363\",\"1.68577\",\"35.7306\",\"115913000\",\"Wyomissing\",\"Pennsylvania\",\"Consumer Services\",\"Casinos/Gaming\",\"25750\",\"1982\"],[\"Salesforce\",\"salesforce.com, inc.\",\"CRM\",\"6/23/04\",\"stock\",\"172.41\",\"174.48\",\"169.63\",\"2736727\",\"9196226.3\",\"195.72\",\"\",\"137.87\",\"151000000000\",\"4.70595\",\"1178.4\",\"887000000\",\"San Francisco\",\"California\",\"Technology Services\",\"Packaged Software\",\"35000\",\"1999\"],[\"Pfizer\",\"Pfizer Inc.\",\"PFE\",\"1/2/90\",\"stock\",\"35.07\",\"35.95\",\"34.95\",\"16479649\",\"42564156.6\",\"44.5613\",\"4.3578\",\"32.53\",\"190000000000\",\"3.007\",\"11.95\",\"5534000000\",\"New York\",\"New York\",\"Health Technology\",\"Pharmaceuticals Major\",\"88300\",\"1849\"],[\"Walmart\",\"Walmart Inc.\",\"WMT\",\"1/2/90\",\"stock\",\"114.24\",\"115.34\",\"113.47\",\"3052793\",\"10620805.8\",\"125.38\",\"1.864\",\"95\",\"306000000000\",\"4.5916\",\"22.3276\",\"2837180000\",\"Bentonville\",\"Arkansas\",\"Retail Trade\",\"Food Retail\",\"2200000\",\"1945\"],[\"Denbury\",\"Denbury Resources, Inc.\",\"DNR\",\"5/8/97\",\"stock\",\"0.7554\",\"0.7698\",\"0.7335\",\"5579361\",\"16352142.3\",\"2.6763\",\"\",\"0.65\",\"381002563\",\"0.268938\",\"1.65636\",\"506383000\",\"Plano\",\"Texas\",\"Energy Minerals\",\"Oil \\u0026 Gas Production\",\"806\",\"1951\"],[\"Sony\",\"Sony Corporation ADS\",\"SNE\",\"1/2/90\",\"adr\",\"63.83\",\"64.36\",\"63.59\",\"355174\",\"1957127.1\",\"73.86\",\"0.41711\",\"41.91\",\"78025987732\",\"2.02082\",\"13.1589\",\"1226417201\",\"Tokyo\",\"Tokyo\",\"Consumer Durables\",\"Electronics/Appliances\",\"114400\",\"1946\"],[\"PG\\u0026E\",\"PG\\u0026E Corporation\",\"PCG\",\"1/2/90\",\"stock\",\"14.98\",\"15.55\",\"14.98\",\"3658505\",\"11197144.9\",\"25.19\",\"\",\"3.55\",\"8203437500\",\"1.55082\",\"\",\"529254000\",\"San Francisco\",\"California\",\"Utilities\",\"Electric Utilities\",\"23000\",\"1995\"],[\"Alphabet Class A\",\"Alphabet Inc. Class A Common Stock\",\"GOOGL\",\"8/19/04\",\"stock\",\"1358.45\",\"1362.37\",\"1337\",\"986627\",\"2612071.2\",\"1530.74\",\"\",\"1027.03\",\"921000000000\",\"4.73711\",\"28.1986\",\"687316079\",\"Mountain View\",\"California\",\"Technology Services\",\"Internet Software/Services\",\"118899\",\"2015\"],[\"Verizon\",\"Verizon Communications\",\"VZ\",\"1/2/90\",\"stock\",\"56.61\",\"56.98\",\"56.12\",\"6414542\",\"24326258.5\",\"62.22\",\"4.2917\",\"52.18\",\"224000000000\",\"3.86132\",\"12.3179\",\"4135860000\",\"New York\",\"New York\",\"Communications\",\"Major Telecommunications\",\"135000\",\"1983\"],[\"Enphase Energy\",\"Enphase Energy, Inc. Common Stock\",\"ENPH\",\"3/30/12\",\"stock\",\"52.31\",\"54\",\"51.52\",\"3282409\",\"13199112\",\"59.15\",\"\",\"8.03\",\"6032075684\",\"23.2458\",\"41.7072\",\"123179000\",\"Fremont\",\"California\",\"Electronic Technology\",\"Semiconductors\",\"577\",\"2006\"],[\"Pinterest\",\"Pinterest, Inc. Class A Common Stock\",\"PINS\",\"4/18/19\",\"stock\",\"19.56\",\"19.745\",\"19.165\",\"5232689\",\"15987614.8\",\"36.83\",\"\",\"17.39\",\"11166128662\",\"5.63228\",\"\",\"572618139\",\"San Francisco\",\"California\",\"Technology Services\",\"Internet Software/Services\",\"2217\",\"2008\"],[\"Shopify\",\"Shopify Inc. Class A subordinate voting shares\",\"SHOP\",\"5/21/15\",\"stock\",\"489\",\"499.78\",\"486.03\",\"1340383\",\"3146716\",\"593.89\",\"\",\"181\",\"53999616211\",\"18.8557\",\"\",\"116551802\",\"Ottawa\",\"Ontario\",\"Retail Trade\",\"Internet Retail\",\"4000\",\"2004\"],[\"iQIYI\",\"iQIYI, Inc. American Depositary Shares\",\"IQ\",\"3/29/18\",\"adr\",\"23.71\",\"24.125\",\"23.58\",\"2308400\",\"10137145.5\",\"28\",\"\",\"15.12\",\"16307504883\",\"7.98191\",\"\",\"316126828.6\",\"Haidian District\",\"Beijing\",\"Technology Services\",\"Internet Software/Services\",\"8577\",\"2009\"],[\"Bilibili\",\"Bilibili Inc. American Depositary Shares\",\"BILI\",\"3/28/18\",\"adr\",\"26.71\",\"27.44\",\"26.71\",\"2320558\",\"7947870.1\",\"29.28\",\"\",\"13.23\",\"8009799805\",\"7.0907\",\"\",\"226543275\",\"Shanghai\",\"Shanghai\",\"Technology Services\",\"Internet Software/Services\",\"3033\",\"2009\"],[\"PowerShares S\\u0026P 500 High Dividend Low Volatility ETF\",\"Invesco S\\u0026P 500 High Dividend Low Volatility ETF\",\"SPHD\",\"10/18/12\",\"etp\",\"39.3\",\"39.58\",\"39.12\",\"603850\",\"1995704.8\",\"44.42\",\"4.60396\",\"36.95\",\"3226825750\",\"2.16888\",\"17.5099\",\"84950000\",\"\",\"\",\"Miscellaneous\",\"Investment Trusts Or Mutual Funds\",\"\",\"\"],[\"Costco\",\"Costco Wholesale Corporation Common Stock\",\"COST\",\"1/2/90\",\"stock\",\"308.29\",\"315.835\",\"305.13\",\"1737477\",\"3746728.2\",\"325.26\",\"0.84104\",\"215.87\",\"124000000000\",\"8.61051\",\"36.644\",\"441758000\",\"Issaquah\",\"Washington\",\"Retail Trade\",\"Specialty Stores\",\"254000\",\"1983\"],[\"Delta Air Lines\",\"Delta Air Lines, Inc.\",\"DAL\",\"5/3/07\",\"stock\",\"47.58\",\"47.62\",\"46.021\",\"9715768\",\"15969442.5\",\"63.4369\",\"3.41391\",\"44.33\",\"29527537109\",\"1.97377\",\"6.4601\",\"640094000\",\"Atlanta\",\"Georgia\",\"Transportation\",\"Airlines\",\"91000\",\"1928\"],[\"Peloton Interactive\",\"Peloton Interactive, Inc. Class A Common Stock\",\"PTON\",\"\",\"stock\",\"27.01\",\"27.2\",\"25.795\",\"2261133\",\"9648126\",\"37.02\",\"\",\"20.46\",\"7489625600\",\"5.07038\",\"\",\"280614578\",\"New York\",\"New York\",\"Consumer Services\",\"Other Consumer Services\",\"1954\",\"2012\"],[\"Dropbox\",\"Dropbox, Inc. Class A Common Stock\",\"DBX\",\"3/23/18\",\"stock\",\"19.52\",\"19.59\",\"19.18\",\"1082001\",\"12528623.8\",\"26.2\",\"\",\"16.08\",\"8202588623\",\"9.95043\",\"\",\"419355000\",\"San Francisco\",\"California\",\"Technology Services\",\"Data Processing Services\",\"2801\",\"2007\"],[\"JD.com\",\"JD.com, Inc. American Depositary Shares\",\"JD\",\"5/22/14\",\"adr\",\"42.48\",\"44.755\",\"42.4101\",\"14322587\",\"20659683\",\"44.755\",\"\",\"25.48\",\"56230796875\",\"5.94672\",\"35.7615\",\"1238653055\",\"Beijing\",\"Beijing\",\"Retail Trade\",\"Internet Retail\",\"178927\",\"1998\"],[\"Exxon Mobil\",\"Exxon Mobil Corporation\",\"XOM\",\"1/2/90\",\"stock\",\"52.23\",\"52.23\",\"51.12\",\"10188387\",\"36453406.6\",\"83.49\",\"6.4588\",\"48.01\",\"218000000000\",\"1.19034\",\"16.0438\",\"4232190000\",\"Irving\",\"Texas\",\"Energy Minerals\",\"Integrated Oil\",\"74900\",\"1882\"],[\"SmileDirectClub\",\"SmileDirectClub, Inc. Class A Common Stock\",\"SDC\",\"9/12/19\",\"stock\",\"8.07\",\"8.2103\",\"7.86\",\"2866365\",\"10277268.2\",\"21.1\",\"\",\"7.02\",\"2859466064\",\"2.24445\",\"\",\"102807000\",\"Nashville\",\"Tennessee\",\"Health Services\",\"Medical/Nursing Services\",\"\",\"2014\"],[\"Twilio\",\"Twilio Inc.\",\"TWLO\",\"6/23/16\",\"stock\",\"106.81\",\"107.26\",\"103.8313\",\"1899781\",\"3738515.3\",\"151\",\"\",\"89.81\",\"15453999634\",\"3.6057\",\"\",\"137198150\",\"San Francisco\",\"California\",\"Technology Services\",\"Packaged Software\",\"2905\",\"2008\"],[\"AbbVie\",\"ABBVIE INC.\",\"ABBV\",\"1/2/13\",\"stock\",\"89.26\",\"90.915\",\"88.96\",\"8388777\",\"10779374.4\",\"97.86\",\"5.32191\",\"62.66\",\"127000000000\",\"-15.8478\",\"16.7834\",\"1479160000\",\"North Chicago\",\"Illinois\",\"Health Technology\",\"Pharmaceuticals: Major\",\"30000\",\"2011\"],[\"CRISPR\",\"CRISPR Therapeutics AG Common Shares\",\"CRSP\",\"10/19/16\",\"stock\",\"52.35\",\"53.16\",\"51.3987\",\"291957\",\"1262995\",\"74\",\"\",\"33.55\",\"3252218750\",\"3.45191\",\"45.4313\",\"60846000\",\"Zug\",\"Zug\",\"Health Technology\",\"Biotechnology\",\"304\",\"2014\"],[\"Zoom\",\"Zoom Video Communications, Inc. Class A Common Stock\",\"ZM\",\"4/18/19\",\"stock\",\"118.67\",\"119.97\",\"113.36\",\"5329723\",\"11919061.6\",\"121.93\",\"\",\"59.94\",\"29022240234\",\"42.7995\",\"2222.2\",\"276402288\",\"San Jose\",\"California\",\"Technology Services\",\"Packaged Software\",\"1702\",\"2011\"],[\"Limelight Networks\",\"Limelight Networks, Inc. Common Stock\",\"LLNW\",\"6/8/07\",\"stock\",\"4.91\",\"5.02\",\"4.8358\",\"463513\",\"1774704.5\",\"6.18\",\"\",\"2.2\",\"570533800\",\"3.4259\",\"\",\"118368000\",\"Scottsdale\",\"Arizona\",\"Technology Services\",\"Internet Software Or Services\",\"610\",\"2001\"],[\"Washington Prime Group\",\"Washington Prime Group Inc.\",\"WPG\",\"1/16/15\",\"reit\",\"2.64\",\"2.64\",\"2.52\",\"3199430\",\"10062459.8\",\"5.72\",\"20\",\"2.17\",\"513931030\",\"0.752396\",\"\",\"186884000\",\"Columbus\",\"Ohio\",\"Finance\",\"Real Estate Investment Trusts\",\"834\",\"2014\"],[\"Target\",\"Target Corporation\",\"TGT\",\"1/2/90\",\"stock\",\"107.17\",\"107.73\",\"104.68\",\"3443422\",\"6378350.2\",\"130.24\",\"2.42069\",\"70.03\",\"52193910156\",\"4.78634\",\"17.1478\",\"506737000\",\"Minneapolis\",\"Minnesota\",\"Retail Trade\",\"Specialty Stores\",\"360000\",\"1902\"],[\"SunPower\",\"SunPower Corporation Common Stock\",\"SPWR\",\"11/17/05\",\"stock\",\"9.07\",\"9.24\",\"8.83\",\"1729834\",\"6809343\",\"16.04\",\"\",\"5.96\",\"1500399400\",\"144.251\",\"58.0559\",\"168121000\",\"San Jose\",\"California\",\"Producer Manufacturing\",\"Electrical Products\",\"8400\",\"1985\"]]}"
+      },
+      "dateCreated": "May 17, 2020 11:05:49 PM",
+      "dateSubmitted": "May 22, 2020 10:02:33 PM",
+      "dateStarted": "May 22, 2020 10:02:33 PM",
+      "dateFinished": "May 22, 2020 10:02:34 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 1000
+    },
+    {
+      "text": "%md\n# CSM word of wisdom...\n## yolo\n### you only live once",
+      "user": "logan@qubole.com",
+      "dateUpdated": "May 22, 2020 10:00:37 PM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "version": "v1",
+      "jobName": "paragraph_1589757304740_1038154112",
+      "id": "20200517-231504_1281825356_q_1WAEZFSAMW1589756749",
+      "result": {
+        "code": "SUCCESS",
+        "type": "HTML",
+        "msg": "\u003cdiv class\u003d\"markdown-body\"\u003e\n\u003ch1\u003eCSM word of wisdom\u0026hellip;\u003c/h1\u003e\n\u003ch2\u003eyolo\u003c/h2\u003e\n\u003ch3\u003eyou only live once\u003c/h3\u003e\n\u003c/div\u003e"
+      },
+      "dateCreated": "May 17, 2020 11:15:04 PM",
+      "dateSubmitted": "May 22, 2020 10:00:37 PM",
+      "dateStarted": "May 22, 2020 10:00:37 PM",
+      "dateFinished": "May 22, 2020 10:00:37 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 1000
+    },
+    {
+      "text": "",
+      "user": "logan@qubole.com",
+      "dateUpdated": "May 22, 2020 9:51:25 PM",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true,
+        "editorMode": "ace/mode/sql"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "version": "v0",
+      "jobName": "paragraph_1590183305369_1689147444",
+      "id": "20200522-213505_49857117_q_1WAEZFSAMW1589756749",
+      "dateCreated": "May 22, 2020 9:35:05 PM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 1000
+    }
+  ],
+  "name": "Logan_Robinhood",
+  "id": "1WAEZFSAMW1589756749",
+  "angularObjects": {
+    "2FA2JZPNG18361588703867562:shared_process": [],
+    "2F8DCGAUR18361588703867567:shared_process": [],
+    "2FAF9RG1G18361588703867567:shared_process": [],
+    "2F71AER7818361588703867566:shared_process": []
+  },
+  "config": {
+    "isDashboard": false,
+    "defaultLang": "sql"
+  },
+  "info": {},
+  "source": "FCN"
+}
